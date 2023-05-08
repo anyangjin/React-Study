@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
-import "./FragmentTest.css";
+
+import React, { Fragment } from 'react';
+import './FragmentTest.css'
 
 function ListItem({ item }) {
   return (
@@ -32,36 +33,46 @@ let list = [
 ];
 
 function MyComponent() {
-  return list.map((item) => {
-    return (
-      <>
+  return (
+    list.map((item) => {
+      return (<>
         <h1>{item.area}</h1>
-        <p>{item.visited ? "방문함" : "아직 안감"}</p>
-      </>
-    );
-  });
+        <p>{item.visited ? "방문함" : '아직 안감'}</p>
+      </>)
+    })
+
+  );
 }
 
+
 const items = [
-  { id: 1, name: "Apple", desc: "빨간건 사과" },
-  { id: 2, name: "Banana", desc: "바나나는 길어" },
-  { id: 3, name: "Cherry", desc: "체리는 비싸" },
+  { id: 1, name: 'Apple', desc: '빨간건 사과' },
+  { id: 2, name: 'Banana', desc: '바나나는 길어' },
+  { id: 3, name: 'Cherry', desc: '체리는 비싸' }
 ];
 
 function ItemList() {
+
   const itemList = items.map(({ id, name, desc }) => {
-    return (
-      <React.Fragment key={id}>
-        <dt>{name}</dt>
-        <dd>{desc}</dd>
-      </React.Fragment>
-    );
+    return (<React.Fragment key={id}>
+      <dt>{name}</dt>
+      <dd>{desc}</dd>
+    </React.Fragment>);
   });
 
-  return <dl>{itemList}</dl>;
+  return (
+    <dl>
+      {itemList}
+    </dl>
+  )
+
 }
 
 function App() {
-  return <ItemList />;
+  return (
+
+    <ItemList />
+
+  );
 }
 export default App;
