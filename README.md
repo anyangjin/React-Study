@@ -4,4 +4,5 @@
 - todolsit
 - vendingmachine
 - netflix
+- 10000시간의 법칙
 <!-- npx create-react-app 생성할폴더명 --template basic-react -->
