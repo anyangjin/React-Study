@@ -1,0 +1,45 @@
+#game-board {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#worm {
+  background-color: green;
+  color: greenyellow;
+}
+
+.apple {
+  background-color: red;
+}
+#game-board {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#worm {
+  background-color: green;
+}
+
+.apple {
+  background-color: red;
+}
