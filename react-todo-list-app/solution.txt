@@ -1,0 +1,41 @@
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+Drag and Drop 도와주는 모듈 : react-beautiful-dnd
+https://www.npmjs.com/package/react-beautiful-dnd
+npm install react-beautiful-dnd --save
+
+<DragDropContext /> : 드래그하고 드랍하길 원하는 부분을 감싸줌.
+<Droppable /> : 드랍 할 수 있는 거를 감싸줌.
+<Draggable /> : 드래그 할 수 있는 것들을 감싸줌.
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+TailWindsCSS 사용
+https://tailwindcss.com/docs/installation/using-postcss
+- 빠른 스타일링 작업 가능.
+- class or id 명을 작성하기 위한 고생 필요 X
+- 확장으로 Tailwind CSS IntelliSense 설치해서 금방 익숙해질수있음.
+
+npm install -D tailwindcss postcss autoprefixer
+package.json 에 새로 생김
+ "devDependencies": 
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+
+npx tailwindcss init
+테일윈드 콤피그 파일이 새로 생김
+content부분 [] 안에  ["./src/**/*.{html,js}"] 추가
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+마지막으로 테일윈드 지시자
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+css에 넣어야함 index.css에 넣기 없으면 app.css에 넣기
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
